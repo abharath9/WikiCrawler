@@ -3,6 +3,7 @@ WikiCrawler:
 This will crawl through all the Wikipedia pages and try to find path between the source Wikipedia page and philosophy page.
 It is a Clojure based application.
 
+
 It follows the following rules to find the path.
 The rules for crawling are as follows: 
 1.	The first link in the body of Wikipedia (Introduction + Content) article is followed. 
@@ -22,7 +23,8 @@ o	Help links Eg.
 
 Instructions to run this application:
 I have used enlive-1.1.6 and tagsoup-1.2 libraries to extract the html tags from Wikipedia pages.
+Created a function wiki-crawl-to-philosophy which sould take url as input and gives you the complete path separate by pipe "|".
 After you have loaded this script to the clojure REPL, you need to run the function as follows.
 
-(wiki-crawl-to-philosophy "https://en.wikipedia.org/wiki/Mathematics")
+(wiki-crawl-to-philosophy "https://en.wikipedia.org/wiki/Google")
 
